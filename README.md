@@ -10,6 +10,7 @@
 simple resizing the video to the surrounding elemts width
 ```javascript
 $('#section1').adjustVideo(); // simple resizing to the surrounding elements width
+```
 
 resizing the video to a particular size
 ```javascript
@@ -18,6 +19,7 @@ $('#section2').adjustVideo({
     'width' : '450' // resizing video to a specific width ( keeping the aspect ratio )
 });
 ```
+
 resizing the video to a particular size disregarding the aspect ratio
 ```javascript
 $('#section2').adjustVideo({
