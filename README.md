@@ -2,6 +2,8 @@
 
 ### a jquery plugin for adjusting video iframe sizes
 
+this plugin resizes any number of videos nested inside a selector
+
 ##### live examples:
 [videoplugin.soluch.at](http://videoplugin.soluch.at/)
 
