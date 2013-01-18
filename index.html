@@ -16,10 +16,18 @@
             }
             pre {
                 padding: 20px;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 background-color: #F1F8E2;
             }
             .clearfix { clear: both; width: 100%; height: 1px; }
+            hr {
+                width: 100%;
+                height: 100px;
+                margin: 50px 0;
+                border: 0;
+                background-color: #80AD24;
+                color: #80AD24;
+            }
             .wrapper {
                 width: 960px;
                 margin: 0 auto;
@@ -44,7 +52,7 @@
     <body>
         <div class="wrapper">
             <header>
-                <h1>adjustVideo - an video iframe size adjustment jQuery Plugin</h1>
+                <h1>adjustVideo - a video iframe size adjustment jQuery Plugin</h1>
                 <h5>by <a href="http://soluch.at/" target="_blank">Adrian Soluch</a></h5>
             </header>
 
@@ -52,10 +60,11 @@
                 <div class="clearfix"></div>
                 <p>Vimeo video example</p>
                 <pre>
-                    $('#section1').adjustVideo(); // simple resizing to surrounding elements width
+                    $('#section1').adjustVideo(); // simple resizing to the surrounding elements width
                 </pre>
                 <iframe src="http://player.vimeo.com/video/40056491?title=0&portrait=0&byline=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 <br>
+                <hr>
                 <p>Youtube video example</p>
                 <pre>
                     $('#section1').adjustVideo();
@@ -66,7 +75,8 @@
 
             <section id="section2">
                 <div class="clearfix"></div>
-                <p>Youtube video example</p>
+                <hr>
+                <p>Youtube video example width 400 pixels</p>
                 <pre>
                     $('#section2').adjustVideo({
                         'center' : true, // centering the video
@@ -78,7 +88,8 @@
 
             <section id="section3">
                 <div class="clearfix"></div>
-                <p>Youtube video example</p>
+                <hr>
+                <p>Youtube video example 400x400</p>
                 <pre>
                     jQuery('#section3').adjustVideo({
                         'width' : '400', // resizing video to a specific width & height
@@ -87,7 +98,7 @@
                 </pre>
                 <iframe width="560" height="315" src="http://www.youtube.com/embed/rczqP0FwWrk" frameborder="0" allowfullscreen></iframe>
                 <br>
-                <p>Vimeo video example</p>
+                <p>Vimeo video example 400x400</p>
                 <iframe src="http://player.vimeo.com/video/40056491?title=0&portrait=0&byline=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
             </section>
 
