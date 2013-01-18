@@ -1,6 +1,6 @@
 # adjustVideo
 
-### a jquery plugin for adjusting video iframes
+### a jquery plugin for adjusting video iframe sizes
 
 ##### live examples:
 [videoplugin.soluch.at](http://videoplugin.soluch.at/)
