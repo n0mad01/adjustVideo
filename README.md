@@ -9,7 +9,7 @@ this plugin resizes any number of videos nested inside a selector
 
 ##### usage:
 
-simple resizing the video to the surrounding elemts width
+simple resizing the video to the surrounding elements width
 ```javascript
 $('#section1').adjustVideo(); // simple resizing to the surrounding elements width
 ```
