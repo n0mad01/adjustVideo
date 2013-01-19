@@ -2,9 +2,9 @@
  * adjustVideo.js v1.0.0
  * http://videoplugin.soluch.at/
  * ============================================================
+ * Copyright 2013, Adrian Soluch - http://soluch.at/
+ * Released under the MIT License https://raw.github.com/n0mad01/adjustVideo/master/MIT-LICENSE.txt
  * ============================================================ */
-
-
 
 (function($) {
     $.adjustVideo = function( element, options ) {
