@@ -29,3 +29,5 @@ $('#section2').adjustVideo({
     'height' : '400'
 });
 ```
+##### Copyright and License
+adjustVideo is licensed under the terms of the MIT License, see the included MIT-LICENSE file.
