@@ -9,12 +9,22 @@
 
         <!-- Le styles -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
+
+        <!-- Syntax Highlighting -->
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/pojoaque.min.css">
+
         <style type="text/css">
             body {
                 padding-top: 20px;
                 padding-bottom: 40px;
             }
-
+            pre {
+            }
+            p {
+                margin-bottom: 30px;
+            }
             /* Custom container */
             .container-narrow {
                 margin: 0 auto;
@@ -46,8 +56,6 @@
                 margin-top: 28px;
             }
         </style>
-        <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="css/font-awesome.css" rel="stylesheet">
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -81,9 +89,12 @@
 
         <div class="row-fluid">
             <div class="span12">
-                <h4>Vimeo resize example</h4>
+                <p>Simple video resizing plugin. Resizing to surrounding elements width or set width/height properties as you wish, with or without maintaining aspect ratio.</p>
+                <h4>Vimeo & Youtube example</h4>
                 <pre>
+                    <code>
 $('#section1').adjustVideo(); // simple resizing to the surrounding elements width
+                    </code>
                 </pre>
             </div>
         </div>
@@ -101,12 +112,14 @@ $('#section1').adjustVideo(); // simple resizing to the surrounding elements wid
 
         <div class="row-fluid marketing" id="section2">
             <div class="span12">
-                <h4>Youtube resize example width 450 pixels & centered</h4>
+                <h4>Youtube example width 450 pixels & centered</h4>
                 <pre>
+                    <code>
 $('#section2').adjustVideo({
     'center' : true, // centering the video
     'width' : '450' // resizing video to a specific width ( keeping the aspect ratio )
 });
+                    </code>
                 </pre>
                 <br>
                 <iframe width="560" height="315" src="http://www.youtube.com/embed/WwhKrpmgvz8" frameborder="0" allowfullscreen></iframe>
@@ -117,12 +130,14 @@ $('#section2').adjustVideo({
 
         <div class="row-fluid marketing" id="section3">
             <div class="span12">
-                <h4>Youtube & Vimeo resize example 400x400</h4>
+                <h4>Youtube & Vimeo example 400x400</h4>
                 <pre>
-jQuery('#section3').adjustVideo({
+                    <code>
+$('#section3').adjustVideo({
     'width' : '400',
     'height' : '400'
 });
+                    </code>
                 </pre>
                 <br>
                 <iframe width="560" height="315" src="http://www.youtube.com/embed/rczqP0FwWrk" frameborder="0" allowfullscreen></iframe>
@@ -144,6 +159,8 @@ jQuery('#section3').adjustVideo({
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="adjustVideo.js"></script>
+    <!-- Syntax Highlighting -->
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
     <script>
         $.noConflict();
 
@@ -157,6 +174,11 @@ jQuery('#section3').adjustVideo({
                 'width' : '400', // resizing video to a specific width & height
                 'height' : '400'
             });
+
+            // Syntax Highlighting
+            //hljs.initHighlightingOnLoad();
+            //$('pre code').each(function(i, e) {hljs.highlightBlock(e, null, true)});
+            jQuery('pre code').each(function(i, e) {hljs.highlightBlock(e)});
         });
     </script>
 
