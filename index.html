@@ -60,6 +60,23 @@
             .marketing p + h4 {
                 margin-top: 28px;
             }
+            .slabtexted .slabtext {
+                display:-moz-inline-box;
+                display:inline-block;
+                white-space:nowrap;
+            }
+            .slabtextinactive .slabtext {
+                display:inline;
+                white-space:normal;
+                font-size:1em !important;
+                letter-spacing:inherit !important;
+                word-spacing:inherit !important;
+                *letter-spacing:0 !important;
+                *word-spacing:0 !important;
+            }
+            .slabtextdone .slabtext {
+                display:block;
+            }
         </style>
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -86,7 +103,9 @@
             <hr>
 
             <div class="jumbotron">
-                <h1>a video iframe size adjustment jQuery plugin</h1>
+                <h1 class="slabtext">
+                    a video iframe size adjustment jQuery plugin
+                </h1>
                 <!--<h5>by <a href="http://soluch.at/" target="_blank">Adrian Soluch</a></h5>-->
             </div>
 
@@ -222,6 +241,7 @@ $('#section3').adjustVideo({
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="jquery.slabtext.min.js"></script>
         <script src="adjustVideo.js"></script>
         <!-- Syntax Highlighting -->
         <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
@@ -243,6 +263,8 @@ $('#section3').adjustVideo({
                 hljs.initHighlightingOnLoad();
                 //$('pre code').each(function(i, e) {hljs.highlightBlock(e, null, true)});
                 //jQuery('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+
+                $('h1.slabtext').slabText({});
             });
         </script>
 
