@@ -74,156 +74,157 @@
 
         <div class="container-narrow">
 
-        <div class="masthead">
-            <ul class="nav nav-pills pull-right">
-                <li class="active"><a href="/"><i class="icon-home"></i>&nbsp;&nbsp;Home</a></li>
-                <li><a href="https://github.com/n0mad01/adjustVideo" target="_blank"><i class="icon-github-alt"></i>&nbsp;&nbsp;GitHub</a></li>
-                <!--<li><a href="#">Contact</a></li>-->
-            </ul>
-            <h3 class="muted">adjustVideo</h3>
-        </div>
+            <div class="masthead">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="/"><i class="icon-home"></i>&nbsp;&nbsp;Home</a></li>
+                    <li><a href="https://github.com/n0mad01/adjustVideo" target="_blank"><i class="icon-github-alt"></i>&nbsp;&nbsp;GitHub</a></li>
+                    <!--<li><a href="#">Contact</a></li>-->
+                </ul>
+                <h3 class="muted">adjustVideo</h3>
+            </div>
 
-        <hr>
+            <hr>
 
-        <div class="jumbotron">
-            <h1>a video iframe size adjustment jQuery plugin</h1>
-            <h5>by <a href="http://soluch.at/" target="_blank">Adrian Soluch</a></h5>
-        </div>
+            <div class="jumbotron">
+                <h1>a video iframe size adjustment jQuery plugin</h1>
+                <!--<h5>by <a href="http://soluch.at/" target="_blank">Adrian Soluch</a></h5>-->
+            </div>
 
-        <hr>
+            <hr>
 
-        <div class="row-fluid">
-            <div class="span12">
-                <p>Simple video resizing plugin. Resizing <strong>all videos from within a selector</strong>, either fitting them to the surrounding elements width <strong>or set width/height properties </strong>as you wish, with or without maintaining  <strong>aspect ratio</strong>.
-                <br>
-                <br>
-                adjustVideo is licensed under the terms of the  <strong>MIT License</strong>.</p>
+            <div class="row-fluid">
+                <div class="span12">
+                    <p>Simple video resizing plugin. Resizing <strong>all videos from within a selector</strong>, either fitting them to the surrounding elements width <strong>or set width/height properties </strong>as you wish, with or without maintaining  <strong>aspect ratio</strong>.
+                    Videos without width / height size properties set are completely <strong>fluid</strong>!
+                    <br>
+                    <br>
+                    adjustVideo is licensed under the terms of the  <strong>MIT License</strong>.</p>
 
-                <a href="https://twitter.com/n0mad01" class="twitter-follow-button" data-show-count="false" data-lang="de">@n0mad01 folgen</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <a href="https://twitter.com/n0mad01" class="twitter-follow-button" data-show-count="false" data-lang="de">@n0mad01 folgen</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-                <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fvideoplugin.soluch.at%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=176751532403688" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
+                    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fvideoplugin.soluch.at%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font=verdana&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=176751532403688" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
 
-                <div class="clearfix"></div>
+                    <div class="clearfix"></div>
 
-                <h4>Vimeo & Youtube example</h4>
-                <pre>
-                    <code>
+                    <h4>Vimeo & Youtube example</h4>
+                    <pre>
+                        <code>
 $('#section1').adjustVideo(); // simple resizing to the surrounding elements width
-                    </code>
-                </pre>
+                        </code>
+                    </pre>
+                </div>
             </div>
-        </div>
-        <div class="row-fluid marketing" id="section1">
-            <div class="span6">
-                <iframe src="http://player.vimeo.com/video/40056491?title=0&portrait=0&byline=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <div class="row-fluid marketing" id="section1">
+                <div class="span6">
+                    <iframe src="http://player.vimeo.com/video/40056491?title=0&portrait=0&byline=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
+
+                <div class="span6">
+                    <iframe width="560" height="315" src="http://www.youtube.com/embed/u5X5cV-4LRo" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
 
-            <div class="span6">
-                <iframe width="560" height="315" src="http://www.youtube.com/embed/u5X5cV-4LRo" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
+            <hr>
 
-        <hr>
-
-        <div class="row-fluid marketing" id="section2">
-            <div class="span12">
-                <h4>Youtube example width 450 pixels & centered</h4>
-                <pre>
-                    <code>
+            <div class="row-fluid marketing" id="section2">
+                <div class="span12">
+                    <h4>Youtube example width 450 pixels & centered</h4>
+                    <pre>
+                        <code>
 $('#section2').adjustVideo({
     'center' : true, // centering the video
     'width' : '450' // resizing video to a specific width ( keeping the aspect ratio )
 });
-                    </code>
-                </pre>
-                <br>
-                <iframe width="560" height="315" src="http://www.youtube.com/embed/WwhKrpmgvz8" frameborder="0" allowfullscreen></iframe>
+                        </code>
+                    </pre>
+                    <br>
+                    <iframe width="560" height="315" src="http://www.youtube.com/embed/WwhKrpmgvz8" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
 
-        <hr>
+            <hr>
 
-        <div class="row-fluid marketing" id="section3">
-            <div class="span12">
-                <h4>Youtube & Vimeo example 400x400</h4>
-                <pre>
-                    <code>
+            <div class="row-fluid marketing" id="section3">
+                <div class="span12">
+                    <h4>Youtube & Vimeo example 400x400</h4>
+                    <pre>
+                        <code>
 $('#section3').adjustVideo({
     'width' : '400',
     'height' : '400'
 });
-                    </code>
-                </pre>
-                <br>
-                <iframe width="560" height="315" src="http://www.youtube.com/embed/rczqP0FwWrk" frameborder="0" allowfullscreen></iframe>
-                <br>
-                <iframe src="http://player.vimeo.com/video/40056491?title=0&portrait=0&byline=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </code>
+                    </pre>
+                    <br>
+                    <iframe width="560" height="315" src="http://www.youtube.com/embed/rczqP0FwWrk" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                    <iframe src="http://player.vimeo.com/video/40056491?title=0&portrait=0&byline=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
             </div>
-        </div>
 
-        <hr>
+            <hr>
 
-        <div class="footer">
-            <p><a href="http://soluch.at/" target="_blank">Adrian Soluch 2013</a></p>
-        </div>
+            <div class="footer">
+                <p><a href="http://soluch.at/" target="_blank">soluch.at 2013</a></p>
+            </div>
 
-    </div> <!-- /container -->
+        </div> <!-- /container -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="adjustVideo.js"></script>
-    <!-- Syntax Highlighting -->
-    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-    <script>
-        $.noConflict();
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="adjustVideo.js"></script>
+        <!-- Syntax Highlighting -->
+        <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+        <script>
+            $.noConflict();
 
-        jQuery(document).ready(function($) {
-            jQuery('#section1').adjustVideo(); // simple resizing to surrounding elements width
-            jQuery('#section2').adjustVideo({
-                'center' : true, // centering the video
-                'width' : '450' // resizing video to a specific width ( keeping the aspect ratio )
+            jQuery(document).ready(function($) {
+                jQuery('#section1').adjustVideo(); // simple resizing to surrounding elements width
+                jQuery('#section2').adjustVideo({
+                    'center' : true, // centering the video
+                    'width' : '450' // resizing video to a specific width ( keeping the aspect ratio )
+                });
+                jQuery('#section3').adjustVideo({
+                    'width' : '400', // resizing video to a specific width & height
+                    'height' : '400'
+                });
+
+                // Syntax Highlighting
+                hljs.initHighlightingOnLoad();
+                //$('pre code').each(function(i, e) {hljs.highlightBlock(e, null, true)});
+                //jQuery('pre code').each(function(i, e) {hljs.highlightBlock(e)});
             });
-            jQuery('#section3').adjustVideo({
-                'width' : '400', // resizing video to a specific width & height
-                'height' : '400'
-            });
+        </script>
 
-            // Syntax Highlighting
-            hljs.initHighlightingOnLoad();
-            //$('pre code').each(function(i, e) {hljs.highlightBlock(e, null, true)});
-            //jQuery('pre code').each(function(i, e) {hljs.highlightBlock(e)});
-        });
-    </script>
+        <!--script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/bootstrap-transition.js"></script>
+        <script src="../assets/js/bootstrap-alert.js"></script>
+        <script src="../assets/js/bootstrap-modal.js"></script>
+        <script src="../assets/js/bootstrap-dropdown.js"></script>
+        <script src="../assets/js/bootstrap-scrollspy.js"></script>
+        <script src="../assets/js/bootstrap-tab.js"></script>
+        <script src="../assets/js/bootstrap-tooltip.js"></script>
+        <script src="../assets/js/bootstrap-popover.js"></script>
+        <script src="../assets/js/bootstrap-button.js"></script>
+        <script src="../assets/js/bootstrap-collapse.js"></script>
+        <script src="../assets/js/bootstrap-carousel.js"></script>
+        <script src="../assets/js/bootstrap-typeahead.js"></script-->
 
-    <!--script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script-->
-
-<!-- Piwik -->
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.soluch.at/" : "http://piwik.soluch.at/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 6);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://piwik.soluch.at/piwik.php?idsite=6" style="border:0" alt="" /></p></noscript>
-<!-- End Piwik Tracking Code -->
+        <!-- Piwik -->
+        <script type="text/javascript">
+        var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.soluch.at/" : "http://piwik.soluch.at/");
+        document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+        </script><script type="text/javascript">
+        try {
+        var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 6);
+        piwikTracker.trackPageView();
+        piwikTracker.enableLinkTracking();
+        } catch( err ) {}
+        </script><noscript><p><img src="http://piwik.soluch.at/piwik.php?idsite=6" style="border:0" alt="" /></p></noscript>
+        <!-- End Piwik Tracking Code -->
 
     </body>
 </html>
