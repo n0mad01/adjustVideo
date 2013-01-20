@@ -167,6 +167,31 @@ $('#section3').adjustVideo({
 
             <hr>
 
+            <div class="row-fluid marketing" id="section2">
+                <div class="span12">
+                    <!-- START: Livefyre Embed -->
+                    <div id="livefyre-comments"></div>
+                    <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+                    <script type="text/javascript">
+                    (function () {
+                        var articleId = fyre.conv.load.makeArticleId(null);
+                        fyre.conv.load({}, [{
+                            el: 'livefyre-comments',
+                            network: "livefyre.com",
+                            siteId: "321650",
+                            articleId: articleId,
+                            signed: false,
+                            collectionMeta: {
+                                articleId: articleId,
+                                url: fyre.conv.load.makeCollectionUrl(),
+                            }
+                        }], function() {});
+                    }());
+                    </script>
+                    <!-- END: Livefyre Embed -->
+                </div>
+            </div>
+
             <div class="footer">
                 <p><a href="http://soluch.at/" target="_blank">soluch.at 2013</a></p>
             </div>
