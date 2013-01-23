@@ -10,40 +10,32 @@
     $.adjustVideo = function( element, options ) {
 
         var plugin = this,
-            defaults = {},
+            defaults = {
+                width : null,
+                height: null,
+                unitWidth :'px',
+                unitHeight :'px',
+                center : false
+            },
             $element = $(element),
             element = element,
             $parent = null,
             vids = null,
-            aspectRatio = null,
-            width = null,
-            height = null;
-            unitWidth = 'px',
-            unitHeight = 'px',
-            center = false;
+            aspectRatio = null;
 
         plugin.settings = {};
 
-        setOptions = function() {
-            if( Object.prototype.toString.call( options ) === '[object Object]' ) {
-                if( typeof options.width !== 'undefined' ) { width = options.width; }
-                if( typeof options.height !== 'undefined' ) { height = options.height; }
-                if( typeof options.center !== 'undefined' ) { center = options.center; }
-            }
-        },
         getAspectRatio = function( elem ) {
             return elem.height() / elem.width();
         },
         plugin.init = function() {
             plugin.settings = $.extend( {}, defaults, options );
 
-            setOptions();
-
             vids = $element.find('iframe');
 
             vids.each( function( i ) {
                     $parent = $(this).wrap('<div class="adjustVideo_wrapper" />').parent();
-                if( ! width && ! height ) {
+                if( ! plugin.settings.width && ! plugin.settings.height ) {
                     // apply video wrappers
                     $parent.css({ 
                         'position' : 'relative', 
@@ -59,27 +51,27 @@
                     });
                 }
                 else {
-                    if( height ) {
+                    if( plugin.settings.height ) {
                         // TODO : different size units em, %, px
                         //unitHeight = height.replace ( /[!^0-9]/g, '' );
                         //height = height.match( /\d+\.?\d*/g );
-                        if( ! width ) {
+                        if( ! plugin.settings.width ) {
                             aspectRatio = getAspectRatio( $(this) );
-                            width = ( $(this).height() * aspectRatio );
+                            plugin.settings.width = ( plugin.settings.height / aspectRatio );
                         }
                     }
-                    if( width ) {
-                        if( ! height ) {
+                    if( plugin.settings.width ) {
+                        if( ! plugin.settings.height ) {
                             aspectRatio = getAspectRatio( $(this) );
-                            height = ( $(this).width() * aspectRatio );
+                            plugin.settings.height = ( plugin.settings.width * aspectRatio );
                         }
                         // TODO : different size units em, %, px
                         //unitWidth = width.replace ( /[!^0-9]/g, '' );
                         //width = width.match( /\d+\.?\d*/g );
                     }
-                    $(this).width( width + unitWidth ).height( height + unitHeight );
+                    $(this).width( plugin.settings.width + plugin.settings.unitWidth ).height( plugin.settings.height + plugin.settings.unitHeight );
                 }
-                if( center ) {
+                if( plugin.settings.center ) {
                     $parent.css({ 'text-align' : 'center' });
                 }
             });
