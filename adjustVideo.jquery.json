@@ -1,0 +1,28 @@
+{
+  "name": "adjustVideo",
+  "title": "adjustVideo jQuery plugin",
+  "description": "A jQuery plugin for adjusting video sizes",
+  "keywords": [
+    "jquery",
+    "video",
+    "resizing",
+    "plugins"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Adrian Soluch",
+    "url": "https://github.com/n0mad01"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/n0mad01/adjustVideo/master/MIT-LICENSE.txt"
+    }
+  ],
+  "homepage": "http://videoplugin.soluch.at/",
+  "docs": "http://videoplugin.soluch.at/",
+  "download": "https://github.com/n0mad01/adjustVideo/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.4"
+  }
+}
